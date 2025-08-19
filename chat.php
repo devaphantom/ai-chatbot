@@ -8,8 +8,15 @@ $history = loadUserHistory($user_id);
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_msg = trim($_POST['message']);
     if ($user_msg) {
-        // Save user's message
-        $history[] = ['sender' => 'User', 'message' => $user_msg];
+        $timestamp = date('Y-m-d H:i:s');
+
+        // Save user's message with timestamp and type
+        $history[] = [
+            'sender' => 'User',
+            'message' => $user_msg,
+            'type' => 'text',
+            'timestamp' => $timestamp
+        ];
 
         // Load AI responses
         $ai_json = file_get_contents('ai_responses.json');
@@ -17,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $msg_lower = strtolower($user_msg);
 
-        // Simple keyword-based category detection
+        // Keyword-based category detection
         if (strpos($msg_lower,'hi') !== false || strpos($msg_lower,'hello') !== false) {
             $ai_msg = $ai_data['greetings'][array_rand($ai_data['greetings'])];
         } elseif (strpos($msg_lower,'bye') !== false) {
@@ -36,17 +43,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $ai_msg = $ai_data['default'][array_rand($ai_data['default'])];
         }
 
-        // Save AI response
-        $history[] = ['sender' => 'AI', 'message' => $ai_msg];
+        // Save AI response with timestamp and type
+        $history[] = [
+            'sender' => 'AI',
+            'message' => $ai_msg,
+            'type' => 'text',
+            'timestamp' => date('Y-m-d H:i:s')
+        ];
 
-        // Save updated history
+        // Save updated history to user's JSON file
         saveUserHistory($user_id, $history);
     }
 }
 
-// Return chat history as HTML
+// Return chat history as HTML including timestamps
 foreach ($history as $msg) {
     $class = ($msg['sender'] === 'User') ? 'user' : 'ai';
-    echo "<p class='{$class}'><b>{$msg['sender']}:</b> {$msg['message']}</p>";
+    echo "<p class='{$class}'><b>{$msg['sender']}:</b> {$msg['message']} <span style='font-size:0.8em;color:gray;'>({$msg['timestamp']})</span></p>";
 }
 ?>
