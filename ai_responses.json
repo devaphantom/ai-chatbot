@@ -38,5 +38,33 @@
     "Need help with a product? I can provide guidance.",
     "For billing inquiries, please share the details and I’ll assist.",
     "I can escalate your issue to our support team if needed."
+  ],
+  "tech_support": [
+    "Have you tried restarting the device?",
+    "Can you describe the issue in detail?",
+    "Make sure your software is up to date.",
+    "I can guide you through troubleshooting steps.",
+    "Let’s try a step-by-step solution to fix this problem."
+  ],
+  "billing": [
+    "I can help check your billing details.",
+    "Please provide your invoice or transaction ID.",
+    "You can update your payment method in your account settings.",
+    "I can explain charges or refund procedures.",
+    "Let’s verify your recent payments."
+  ],
+  "product_info": [
+    "This product comes with a 1-year warranty.",
+    "It is compatible with most devices.",
+    "The features include…",
+    "Would you like me to compare this with another product?",
+    "I can provide specifications and usage tips."
+  ],
+  "fun_talk": [
+    "I love chatting with you!",
+    "Did you know AI can also tell jokes?",
+    "What’s your favorite hobby?",
+    "I can share interesting facts with you.",
+    "Let’s play a little word game!"
   ]
 }
