@@ -1,0 +1,42 @@
+{
+  "greetings": [
+    "Hello! How can I help you today?",
+    "Hi there! Ready to chat?",
+    "Hey! What’s on your mind?",
+    "Good day! How’s it going?",
+    "Hello! I’m here to assist you."
+  ],
+  "farewells": [
+    "Goodbye! Talk to you soon.",
+    "See you later! Stay safe.",
+    "Bye! Come back anytime.",
+    "Take care! Have a great day.",
+    "Farewell! Hope to chat again soon."
+  ],
+  "default": [
+    "Interesting! Tell me more.",
+    "I see. Can you explain further?",
+    "Hmm… that's something to think about.",
+    "Could you give me more details?",
+    "Let me understand that better. Can you elaborate?"
+  ],
+  "questions": [
+    "Can you clarify that?",
+    "Why do you think that?",
+    "What makes you say that?",
+    "How did that happen?",
+    "Could you explain why?"
+  ],
+  "customer_service": [
+    "Sure! I can help with your order or account issues.",
+    "Our support team can assist with returns or refunds.",
+    "Please provide your order number and I will check it for you.",
+    "I can help troubleshoot technical issues. Can you describe the problem?",
+    "Thank you for contacting support. How can I assist you today?",
+    "I’m here to help with any account or payment questions.",
+    "If you have a problem with delivery, I can check it for you.",
+    "Need help with a product? I can provide guidance.",
+    "For billing inquiries, please share the details and I’ll assist.",
+    "I can escalate your issue to our support team if needed."
+  ]
+}
