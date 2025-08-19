@@ -1,18 +1,26 @@
 [
   {
     "sender": "User",
-    "message": "Hi AI!"
+    "message": "Hi AI!",
+    "type": "text",
+    "timestamp": "2025-08-19 14:35:10"
   },
   {
     "sender": "AI",
-    "message": "Hello! How can I help you today?"
+    "message": "Hello! How can I help you today?",
+    "type": "text",
+    "timestamp": "2025-08-19 14:35:11"
   },
   {
     "sender": "User",
-    "message": "I have a problem with my order."
+    "message": "I need help with my order.",
+    "type": "text",
+    "timestamp": "2025-08-19 14:36:05"
   },
   {
     "sender": "AI",
-    "message": "Sure! I can help with your order or account issues."
+    "message": "Sure! I can help with your order or account issues.",
+    "type": "text",
+    "timestamp": "2025-08-19 14:36:06"
   }
 ]
