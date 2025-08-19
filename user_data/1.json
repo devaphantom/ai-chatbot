@@ -1,0 +1,18 @@
+[
+  {
+    "sender": "User",
+    "message": "Hi AI!"
+  },
+  {
+    "sender": "AI",
+    "message": "Hello! How can I help you today?"
+  },
+  {
+    "sender": "User",
+    "message": "I have a problem with my order."
+  },
+  {
+    "sender": "AI",
+    "message": "Sure! I can help with your order or account issues."
+  }
+]
