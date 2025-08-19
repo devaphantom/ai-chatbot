@@ -1,0 +1,26 @@
+[
+  {
+    "sender": "User",
+    "message": "Hey AI, I have a technical problem.",
+    "type": "text",
+    "timestamp": "2025-08-19 16:12:05"
+  },
+  {
+    "sender": "AI",
+    "message": "Can you describe the issue in detail?",
+    "type": "text",
+    "timestamp": "2025-08-19 16:12:06"
+  },
+  {
+    "sender": "User",
+    "message": "My device keeps showing an error code 404.",
+    "type": "text",
+    "timestamp": "2025-08-19 16:13:02"
+  },
+  {
+    "sender": "AI",
+    "message": "Have you tried restarting the device?",
+    "type": "text",
+    "timestamp": "2025-08-19 16:13:03"
+  }
+]
