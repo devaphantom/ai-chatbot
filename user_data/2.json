@@ -1,0 +1,26 @@
+[
+  {
+    "sender": "User",
+    "message": "Hello!",
+    "type": "text",
+    "timestamp": "2025-08-19 15:00:20"
+  },
+  {
+    "sender": "AI",
+    "message": "Hi there! Ready to chat?",
+    "type": "text",
+    "timestamp": "2025-08-19 15:00:21"
+  },
+  {
+    "sender": "User",
+    "message": "Can you tell me about the product features?",
+    "type": "text",
+    "timestamp": "2025-08-19 15:01:10"
+  },
+  {
+    "sender": "AI",
+    "message": "This product comes with a 1-year warranty.",
+    "type": "text",
+    "timestamp": "2025-08-19 15:01:11"
+  }
+]
